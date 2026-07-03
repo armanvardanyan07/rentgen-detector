@@ -1,6 +1,6 @@
 # Rentgen Detector
 
-CNN model for chest X-ray classification: `NORMAL` and `PNEUMONIA`.
+Jupyter Notebook project for chest X-ray classification: `NORMAL` and `PNEUMONIA`.
 
 ## Stack
 
@@ -14,8 +14,7 @@ CNN model for chest X-ray classification: `NORMAL` and `PNEUMONIA`.
 
 ```text
 rentgen-detector/
-|-- train.py
-|-- predict.py
+|-- rentgen_detector.ipynb
 |-- requirements.txt
 |-- .gitignore
 `-- README.md
@@ -41,22 +40,17 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Train
+## Run
 
 ```bash
-python train.py --data ../images
+jupyter notebook rentgen_detector.ipynb
 ```
 
-After training, the model will be saved as:
+The notebook expects the dataset folder near the notebook:
 
 ```text
-xray_model.keras
-```
-
-## Predict
-
-```bash
-python predict.py --image ../images.jpg
+images/train
+images/test
 ```
 
 ## What Is Inside
@@ -65,7 +59,7 @@ python predict.py --image ../images.jpg
 - early stopping by validation loss
 - grayscale image preprocessing
 - simple CNN architecture
-- clean train and predict scripts
+- clean Jupyter notebook without saved outputs
 
 ## Classes
 
