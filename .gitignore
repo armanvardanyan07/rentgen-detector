@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+images/
+data/
+*.keras
+*.h5
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.csv
+*.zip
